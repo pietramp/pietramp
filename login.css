@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    background-color: #364E68;
+    min-height: 70vh;
+    min-width: 70vw;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+}
+h1{
+    color: #EBF0F6;
+    font-weight: normal;
+    margin-left: 1px;
+    font-size: 40px;
+    margin-left: 20px;
+    padding-top: 30px;   
+}
+h4{
+    color: #EBF0F6;
+    font-weight: normal;
+    margin-left: 1px;
+    font-size: 22px;
+    margin-left: 20px;
+    margin-top: -15px;
+}
+
+.puppy{
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+}
+
+main.container {
+    background: #DFE3E8;
+    width: 100%;
+    padding: 2rem;
+    padding-bottom: 190px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 30px 30px 0px 0px;
+    margin-top: -5px;
+    font-size: 20px;
+}
+
+#username{
+    background-color: #DFE3E8;
+    padding-top: 100px;
+}
+#password{
+    background-color: #DFE3E8;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    position: relative;
+}
+
+form .input-field:first-child {
+    margin-bottom: 1.5rem;
+}
+
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 70%;
+    bottom: -5px;
+    left: 0;
+    background: #DFE3E8;
+}
+
+.input-field .underline::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 95%;
+    bottom: -5px;
+    left: 0;
+    background: #364E68;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+}
+
+.input-field input:focus ~ .underline::after {
+    transform: scaleX(1);
+}
+
+.input-field input {
+    outline: none;
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.7);
+    width: 80%;
+}
+
+
+.input-field input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+}
+
+ button {
+    text-decoration: none;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top:30px;
+    width: 300px;
+    height:55px;
+    color: #ffffff;
+    border-radius: 15px;
+    font-size: 1.6rem;
+    background-color: #4C596A;
+    margin-bottom: 15px;
+    border: none;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: background 0.6s;
+    font-family: 'Nunito sans', sans-serif;
+    font-weight: 300;
+}
+
+button:hover {
+    letter-spacing: 0.5px;
+    background: #364E68;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.footer span {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+}
+
+.footer .social-field {
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.footer .social-field a i {
+    margin: 0 0.5rem;
+    width: 15px;
+}
+
+.footer .social-field a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .social-field.twitter {
+    background: linear-gradient(to right, #56a7f2, #468aca);
+}
+
+.footer .social-field.facebook {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+}
+.socialmedia{
+    display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin: auto;
+}
+ #entrar a{
+    text-decoration: none;
+    color: #DFE3E8;
+ }
